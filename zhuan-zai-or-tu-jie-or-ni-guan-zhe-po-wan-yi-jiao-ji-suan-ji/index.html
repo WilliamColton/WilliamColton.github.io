@@ -7,7 +7,7 @@
 <meta name="description" content="🎆🎆欢迎来到我的小破站🎉🎉">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://williamcolton.github.io/favicon.ico?v=1628076473317">
+<link rel="shortcut icon" href="https://williamcolton.github.io/favicon.ico?v=1628077275694">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -69,11 +69,11 @@
             <p class="article-meta">
               2021-08-04
               
-                <a href="https://williamcolton.github.io/pUIQz_az_/" class="badge secondary">
+                <a href="https://williamcolton.github.io/pUIQz_az_/" class="badge success">
                   计算机原理
                 </a>
               
-                <a href="https://williamcolton.github.io/kc-Vxh--l/" class="badge secondary">
+                <a href="https://williamcolton.github.io/kc-Vxh--l/" class="badge ">
                   转载
                 </a>
               
@@ -96,7 +96,61 @@
 <h1 id="二-门电路信号的关联">二、门电路——信号的关联</h1>
 <p>我和小宇就这样一直秘密保持着通话，直到上了大学，父母再也管不了我们用手机了。</p>
 <p>但这么多年的小灯泡通话，使我们总觉得事情没那么简单，于是我们开始了一些新的探索。<br>
-<img src="https://williamcolton.github.io/post-images/1628076450507.gif" alt="" loading="lazy"></p>
+<img src="https://williamcolton.github.io/post-images/1628076450507.gif" alt="" loading="lazy"><br>
+我们增加了一个开关。此时当两个开关同时闭合时，灯泡才会亮。</p>
+<p>这样两个开关与灯泡之间，不再是之前简单的对应关系了，而是有了逻辑。</p>
+<p>开关的断开与闭合分别对应着电路的断开与连通。而小灯泡的不亮与亮，也分别对应着电路的断开与连通。那这两者就可以统一，不再依赖于具体的实物表现了。<br>
+<img src="https://williamcolton.github.io/post-images/1628076695039.gif" alt="" loading="lazy"><br>
+还有，开关的连通与断开，是主动的。而小灯泡的连通与断开，是被动的，是结果。</p>
+<p>我们把开关这里的连通与断开称为输入端，把灯泡的连通与断开称为输出端，并且将整个电路都封装在一个图形里，可以得到如下抽象：<br>
+<img src="https://williamcolton.github.io/post-images/1628076773415.gif" alt="" loading="lazy"><br>
+我们决定把这种电路叫做门电路， 上面这个叫与门。</p>
+<p>为了今后更为抽象的探索，我们将电路连通表示为数字 1，电路断开表示为数字 0。</p>
+<p>我们将这种表示方式称为二进制。</p>
+<table>
+<thead>
+<tr>
+<th>输入A</th>
+<th style="text-align:center">输入B</th>
+<th style="text-align:right">输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:right">1</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://williamcolton.github.io/post-images/1628077126890.gif" alt="" loading="lazy"><br>
+慢慢地，我们发现了越来越多的玩法。<br>
+<img src="https://williamcolton.github.io/post-images/1628077156696.gif" alt="" loading="lazy"><br>
+上面这种电路，我把他抽象成如下门电路形状，叫做或门。<br>
+<img src="https://williamcolton.github.io/post-images/1628077181383.gif" alt="" loading="lazy"><br>
+之后便一发不可收拾，我和小宇设计了越来越多的门电路，我们发现，只要是我们能想到的逻辑关系，都可以设计成对应的门电路。<br>
+<img src="https://williamcolton.github.io/post-images/1628077216849.jpeg" alt="" loading="lazy"></p>
+<h1 id="三-加法器信号的计算">三、加法器——信号的计算</h1>
+<p>十进制数可以转换成二进制数，而二进制数又可以对应到门电路的输入端与输出端。</p>
+<p>于是我和小宇有了一个大胆的想法，能不能设计一个计算加法的电路呢？</p>
+<p>我们首先从最简单的一位二进制数相加开始：</p>
+<p>0+0=0；0+1=1；1+0=1；1+1=10</p>
+<p>变成一张表格如下</p>
 
             </div>
           </article>
@@ -120,7 +174,7 @@
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://williamcolton.github.io/images/avatar.png?v=1628076473317" class="no-responsive avatar">
+    <img src="https://williamcolton.github.io/images/avatar.png?v=1628077275694" class="no-responsive avatar">
     <div class="text-muted">🎆🎆欢迎来到我的小破站🎉🎉</div>
     <div class="social-container">
       
@@ -178,7 +232,7 @@
           计算机原理
         </a>
       
-        <a href="https://williamcolton.github.io/kc-Vxh--l/" class="badge success">
+        <a href="https://williamcolton.github.io/kc-Vxh--l/" class="badge secondary">
           转载
         </a>
       
